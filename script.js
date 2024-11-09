@@ -9,7 +9,9 @@ async function populateDropdown() {
   try {
     const response = await fetch(apiurl + `/api/tags`);
     const tags = await response.json();
-
+    if(response.status == 429){
+      alert("Too many requests please wait a while ~ vaibhav");
+    }else{
     tags.forEach((tag) => {
       const option = document.createElement("option");
       option.value = tag;
@@ -18,6 +20,7 @@ async function populateDropdown() {
     });
   } catch (error) {
     console.error("Error fetching or populating dropdown:", error);
+    }
   }
 }
 
