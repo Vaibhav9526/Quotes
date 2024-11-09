@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: #03346E;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    box-shadow: 2px 1px 19px 5px #000000;
+    width: 90%;
+    max-width: 90%; /* Allow the card to expand up to 90% of the viewport width */
+    min-width: 300px; /* Set a minimum width */
+    background: linear-gradient(135deg, #03346E, #6EACDA);
+    color: #fff;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    overflow-wrap: break-word; /* Ensures long text wraps within the div */
+    flex-grow: 1; /* Allow the card to grow as needed */
+}
+
+.nextmeme {
+    background: linear-gradient(45deg, #b6dcff, #3a86cd);
+    border: none;
+    border-radius: 12px;
+    color: #03346E;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nextmeme:hover {
+    color: white;
+    background: linear-gradient(45deg, #f66767, #8e1313);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.nextmeme:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+.copybtn {
+    background: linear-gradient(45deg, #b6dcff, #3a86cd);
+    border: none;
+    border-radius: 12px;
+    color: #03346E;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.copybtn:hover {
+    color: #274d0c;
+    background: linear-gradient(45deg, #c0ffb6, #26b326);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.copybtn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quotesdisplay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.quotesdisplay h1 {
+    margin: 10px 0;
+    font-size: 2em;
+    word-wrap: break-word;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%; /* Ensure the card takes full width on small screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .quotesdisplay h1 {
+        font-size: 4vw;
+    }
+}
+
+.setup {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(180deg, #608BC1, #ffffff, #608BC1);
+    color: white;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Fugaz One", cursive;
+    color: #ecff9a;
+}
+
+.github {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+    text-decoration: none;
+    color: #000000;
+}
+.selection{
+    margin-top: 20px;
+    /* justify-content: space-between; */
+}
+
+.tag-names{
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 0px 0px 12px 7px rgba(0, 0, 0, 0.3);
+    color: #03346E;
+    margin-top: 15px;
+    border-radius: 20px;
+    padding: 5px 2px 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+}
+.tag-names:hover{
+    box-shadow: 0px 4px 12px 7px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.tag-names:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
